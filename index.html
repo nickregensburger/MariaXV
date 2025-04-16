@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Baile de Máscaras - Maria Clara</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <img src="imagens/logo.png" alt="Logo Maria Clara" class="logo" />
+    <h1>Baile de Máscaras</h1>
+    <h2>Maria Clara Corrêa Regensburger</h2>
+  </header>
+
+  <section class="save-the-date">
+    <h3>SAVE THE DATE</h3>
+    <p class="frase">Prepare-se! Uma noite regada a mistério e magia!</p>
+    <div id="countdown" class="countdown"></div>
+  </section>
+
+  <section class="sobre">
+    <h3>SOBRE A ANIVERSARIANTE</h3>
+    <p>
+      Maria Clara sempre sonhou com esse momento mágico. Uma jovem cheia de sonhos, carinho e alegria, pronta para viver uma noite inesquecível com todos que ama.
+    </p>
+  </section>
+
+  <section class="confirmacao">
+    <h3>CONFIRMAÇÃO DE PRESENÇA</h3>
+    <form action="https://formspree.io/f/xyzeadwy" method="POST">
+      <input type="text" name="nome" placeholder="Nome" required />
+      <input type="email" name="email" placeholder="E-mail" required />
+      <button type="submit">ENVIAR</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Maria Clara</p>
+  </footer>
+
+  <script>
+    const countdown = () => {
+      const endDate = new Date("December 13, 2025 00:00:00").getTime();
+      const now = new Date().getTime();
+      const distance = endDate - now;
+
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      document.getElementById("countdown").innerHTML =
+        `Faltam: ${days} dias ${hours}h ${minutes}m ${seconds}s`;
+
+      if (distance < 0) {
+        document.getElementById("countdown").innerHTML = "O grande dia chegou!";
+      }
+    };
+
+    setInterval(countdown, 1000);
+  </script>
+</body>
+</html>

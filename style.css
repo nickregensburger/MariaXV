@@ -1,0 +1,90 @@
+
+body {
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+  background-color: #000;
+  color: #d4af37;
+  text-align: center;
+}
+
+header {
+  padding: 30px 20px 10px;
+  background: #000;
+}
+
+.logo {
+  max-width: 120px;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 2em;
+  color: #d4af37;
+  margin: 0;
+}
+
+h2 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 1.5em;
+  margin-top: 5px;
+  color: #fff;
+}
+
+section {
+  padding: 40px 20px;
+  border-top: 1px solid rgba(212, 175, 55, 0.3);
+}
+
+.save-the-date h3 {
+  font-size: 1.8em;
+  color: #d4af37;
+}
+
+.save-the-date .frase {
+  font-size: 1.2em;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.countdown {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #d4af37;
+}
+
+.sobre p {
+  max-width: 600px;
+  margin: 0 auto;
+  color: #ccc;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  margin: 0 auto;
+  gap: 15px;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #d4af37;
+  background: transparent;
+  color: #fff;
+}
+
+button {
+  padding: 10px;
+  background-color: #d4af37;
+  border: none;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+footer {
+  padding: 20px;
+  background-color: #111;
+  color: #777;
+  font-size: 0.8em;
+}
